@@ -11,8 +11,10 @@
 #include <string>    // std::string, std::getline
 #include <vector>    // std::vector
 
-std::vector<int> createSecret() {
+std::vector<int> createSecret()
+{
     // Write this procedure here
+    std::vector<int> x = {};
     return {};    // replace this with your code
 }
 
@@ -34,7 +36,7 @@ int main()
     // srand(time(0));
     
     std::vector<int> secret_code = createSecret();
-    std::vector<int> user_guess = {};
+    std::vector<int> user_guess = {-1, -1, -1, -1};
     std::vector<std::string> hint = {};    // an empty list
 
     int secret_code_length = 4;
